@@ -1,0 +1,30 @@
+body { background: #D5D5D5 url(/wobsite_media/bg.png); font-family: Arial, Helvetica, sans-serif; font-size: small; }
+#container { width: 720px; margin: auto; }
+.header { margin: 0px 0px 10px 0px; padding: 0px; height: 169px; width: 720px; background: url(./wobsite_media/wobsite_header.jpg); }
+h1 { margin: 0px; padding: 0px;  }
+h2 { margin: 0px; padding: 0px; font-size: 20px; }
+h3 { border: 1px groove #666666; background-color: #eeeeee; padding: 5px; }
+p { margin: 10px 0px; }
+.box { margin: 0px 0px 10px 0px; padding: 10px; border: 2px groove #666666; -moz-border-radius: 10px; }
+.left { float: left; }
+.right { float: right; }
+.wide { height: 5ex; clear: both; text-align: center; min-height: 0ex; }
+.wide p { margin: 0px; padding: 0px; }
+.newline { clear: both; }
+ul { margin: 0px; padding: 0px; }
+li { margin: 5px 0px 0px 0px; padding: 0px; }
+.column { width: 355px; }
+.column_thick { width: 455px; }
+.column_thin { width: 255px; }
+.box li { margin-left: 15px; }
+.box ul { margin-top: 11px; }
+.access { display: none; }
+#menu { padding: 140px 0px 0px 10px; font-size: 12px; }
+#menu ul li { display: inline; list-style-type: none;  }
+#menu ul li a { float: left; display: block; background-color: #FFF4C0; border: 1px outset #cccccc; opacity: .85; -moz-border-radius: 10px; padding: 3px 5px; margin-right: 5px; }
+#menu ul li a:hover { background-color: #FFFFFF; opacity: 1;  }
+#menu ul li a:active { background-color: #FFFFFF; border: 1px inset #cccccc; opacity: 1;  }
+#menu ul li .selected { background-color: #FFFFFF; text-decoration: none; color: #000000; }
+a { font-weight: bold; }
+form { padding: 0px; margin: 0px; }
+.footer { font-size: 11px; }
