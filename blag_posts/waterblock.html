@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>Nikolai's Wobsite</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" media="all" href="../main.css">
+<style></style>
+</head>
+<body>
+<div id="container">
+	<div class="header">
+		<h1><span class="access">Welcome To Nikolai's Wobsite</span></h1>
+		<div id="menu">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../blag.html" class="selected">Blag</a></li>
+				<li><a href="../images.html">Images</a></li>
+		  	</ul>
+		</div>
+	</div>
+    <div class="box" style="background: #EEFFFF;">
+        <h2>Machining a new waterblock bracket</h2>
+		<p>
+			<b>Feb 7, 2026:</b>
+		</p>
+		<p>
+			So this whole process started when I wanted to watercool my Radeon Vii. The stock cooler the Radeon VII is ineffective and noisy in the
+			best of times, but mine is particularly bad. The card was used for crypto currency mining for a few years and as a result the fans make
+			a terrible rattling noise. This, combined with the pre-production cooler design that lacks a vapor chamber leads to a card that runs very
+			hot and loud.
+		</p>
+		<p></p>
+		<p>
+			The first order of business was obviously to order the cheapest waterblock from ebay.
+		</p>
+		<img src="../wobsite_media/blag/waterblock/ebay.PNG" alt="This screams quality does it not?" width="700">
+		<p>
+			I never expected this waterblock to fit as it only supports up to 61x61mm mounting distances and the Radeon VII is 64x64 like the Vega cards.
+			Fortunately, I recently did the fiber laser cutter training at my University's maker space so making a new mounting plate is totally doable.
+		</p>
+		<p></p>
+		<p>
+			To make the block fit my Radeon VII I needed to make a replacement for what I am calling the mounting plate.
+		</p>
+		<img src="../wobsite_media/blag/waterblock/original plate.jpg" alt="The original plate with 61x61mm hole spacing." width="700">
+		<p>
+			I started by attempting to use QCAD. I could not be bothered to look up a tutorial and endeavored to simply click stuff that looked promising
+			and hope the UX was not disastrously bad. Unfortunately I ended up creating some problematic geometry that the laser cutter software refused
+			to play nice with around the screw holes. After struggling fruitlessly with the laser cutter software, the person who had booked the laser
+			cutter for the timeslot offered to help fix my CAD, insisting that it wasn't a big deal and he could redo my design in AutoCAD in 5 minutes.
+		</p>
+		<p></p>
+		<p>
+			With "my" new design I was ready to actually send it to the laser. I picked a 1/8" inch thick sheet of scrap metal to cut.
+		</p>
+		<img src="../wobsite_media/blag/waterblock/v1.jpg" alt="version 1" width="700">
+		<p>
+			As a result of following the age old saying 'measure once cut a few times' this plate did not fit. Due to the design of the waterblock the
+			plate can't be thicker than ~2mm before it pushes the cold plate away from the main body of the block. Undeterred I returned a few days later
+			with a new design; a tweak of the last design this time done with AutoCAD (students at my university get a free license). I was unable to find
+			any 2mm thick steel scrap, but I did find a 1mm thick sheet.
+		</p>
+		<img src="../wobsite_media/blag/waterblock/the final product.jpg" alt="version 2" width="700">
+		<p>
+			By stacking two copies I was able to get very close to the desired 2mm thickness. Sure there's a bit of strength loss, but it's still more than
+			rigid enough.
+		</p>
+		<p></p>
+		<p>
+			Here's an image of the modified waterblock mounted to my Radeon VII. 
+		</p>
+		<img src="../wobsite_media/blag/waterblock/installed.jpg" alt="a watercooled Radeon VII" width="700">
+		<p>
+			Temperatures are... underwhelming. The hotspot is ~30c hotter than the edge temperature when running ~300W though the core. For context, a delta 
+			over ~20c is considered bad. This means that even though the edge temperature is ok at around 40-45c under load the hotspot manages to hit 70-75c.
+			Not terrible, but far from what you'd expect with a decent waterblock. I tried remounting a few times with varying mounting pressure to no avail.
+		</p>
+		<p></p>
+		<p>
+			Overall I consider this a success. Contact me if you are interested in the .dxf
+		</p>
+        
+    </div>
+
+  
+	<div class="box wide footer" style="background: #FFFFEE;">
+	  	<p>(Regretfully) Hosted on Github. </p>
+		<p>Developed by Nikolai with inspiration from the <a href="https://www.yarr.org.uk/old.html">former official website of the UK chapter of Talk Like A Pirate Day</a>.</p>
+		<p></p>
+		<p></p>
+	</div>
+
+</body></html>
