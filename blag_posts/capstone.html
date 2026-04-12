@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>Nikolai's Wobsite</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" media="all" href="../main.css">
+<style></style>
+</head>
+<body>
+<div id="container">
+	<div class="header">
+		<h1><span class="access">Welcome To Nikolai's Wobsite</span></h1>
+		<div id="menu">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../blag.html" class="selected">Blag</a></li>
+				<li><a href="../images.html">Images</a></li>
+		  	</ul>
+		</div>
+	</div>
+    <div class="box" style="background: #EEFFFF;">
+        <h2>ReCES</h2>
+		<p>
+			<b>April 11, 2026:</b>
+		</p>
+		<p>
+            Well it's finally over! Since January I have been working in a group with 4 other computer engineering students to implement a Zilog Z80 onto a Zybo Z7-10 FPGA development board.
+            What is especially cool is that as of Thursday (the day before the due date and 2 days before the capstone gala) I actually got the thing working so we could demo something!
+        </p>
+        <p>
+            <b>What is a Zilog Z80 anyways?</b>
+        </p>
+        <p>
+            The Zilog Z80 was a microprocessor released in 1976. It was most famously used in the Sinclair ZX Spectrum and TRS-80 early home computers. The Z80 also went on to have a long life 
+            as a low performance microcontroller used in all sorts of things like the TI-84 graphing calculator, the much hated 90s design still sold for $160 required by many post secondary 
+            institutions and high schools. The Z80 was cutting edge when it was new, but half a century later its feature set is a bit dated to say the least.
+        </p>
+        <p>
+            <b>What about the Zybo Z7-10? Also what is an FPGA?</b>
+        </p>
+        <img src="https://cdn11.bigcommerce.com/s-7gavg/images/stencil/1280x1280/products/563/5864/37715276232_8cc130389d_o__92659.1670980599.png?c=2" width="500px">
+        <p>
+            The Zybo Z7-10 is a small circuit board about the size of two credit cards. The purpose of the board is really just to provide connections to the FPGA/microcontroller chip in the 
+            center as well as power. There are also some buttons and switches that you can use to provide input to the FPGA chip and some LEDs that can be controlled by the FPGA. That leave 
+            the question of what is an FPGA? Well an FPGA is a silicon chip that is specially designed to be able to act like pretty much any chip you want, given the correct configuration. 
+            It does this by being made out of a large array of general purpose logic blocks that can be configured to accomplish any logical function, as long as it's not too complicated. 
+            For example you might use a block to add two numbers, or output a signal given a specific pattern of inputs. These blocks are tied together with a configurable mesh of wires so 
+            that any two blocks can be connected, letting the outputs from one block chain into another. There are also specialized blocks for storage. The unique thing about FPGAs is that, 
+            unlike regular silicon chips, is that they are reconfigurable. By changing the configuration of an FPGA you can make the same chip act as a video compressor , AI accelerator, a 
+            simulator for a prototype wifi chip, an exchange for telephone traffic, a computer (as done in our capstone), or really whatever you can think of.
+        </p>
+        <p>
+            The FPGA chip on the Zybo is somewhat special in that it also integrates a microcontroller. In theory you should be able to communicate between the FPGA and microcontroller
+            sides and, for example, have the microcontroller talk to a USB keyboard and pass along the pressed keys to the FPGA. This is unfortunately poorly documented and we were not able to
+            get this functionality working.
+        </p>
+        <p>
+            <b>So what did you actually do for your Capstone?</b>
+        </p>
+        <p>
+            We configured the FPGA on our Zybo Z7-10 to act as close as we could to the original Z80. We were able to get it to run period correct software, as well as a few other demos that I
+            wrote. In its final state our product was able to display text onto a standard VGA compatible monitor and enter text with a "keyboard". To clarify, by "keyboard" I mean that the user
+            was able to enter the binary values of desired characters into the FPGA with the switches 4 bits at a time. This was a terribly slow an painful process with a high skill floor, but did
+            technically work! We also omitted a few features of the original Z80 for time reasons, and since we knew that the program we wanted to run didn't need all the features of the Z80. Our 
+            "Z80" doesn't implement the correct IO behavior (we are missing all of the IO specific instructions) and we also left out all the interrupt related functionality. However, we do implement
+            182 instructions of the 202 instructions in the spec, which is quite a few if I do say so myself.
+        </p>
+        <p>
+            Overall I think the capstone went ok. I had a productive group and have no complaints about the effort anyone else put it, a rarity for group projects in my degree. We did have the 
+            usual poor distribution of work temporally, with a strong bias to the last 2 weeks of the semester.  I spent most of my waking hours over the past ~8 days doing working on the project. 
+            Fortunately I quite enjoyed working on this project or else I don't think I would have bothered putting in the hours to get it over the finish line, as actually finishing the project and
+            having a working demo was not worth any marks. I am thankful that the rest of my team spent more time working on the parts of the project actually worth marks (the final report, poster,
+            presentation, etc.) so I didn't have to do much of that. It was a fun project an I learned a lot. I'm looking forward to working on my own System Verilog project in the future.
+        </p>
+        <p>
+            If you are interested you can check out the <a href="https://github.com/UAlberta-ECE-492-W2026/zilog-z80-emulation">GitHub page.</a>
+        </p>
+
+        
+    </div>
+
+  
+	<div class="box wide footer" style="background: #FFFFEE;">
+	  	<p>Proudly self hosted!</p>
+		<p>Developed by Nikolai with inspiration from the <a href="https://www.yarr.org.uk/old.html">former official website of the UK chapter of Talk Like A Pirate Day</a>.</p>
+		<p></p>
+		<p></p>
+	</div>
+
+</body></html>
