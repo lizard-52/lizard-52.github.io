@@ -2,8 +2,6 @@
 
 # shut down the server while things are being changed
 service apache2 stop
-cd /home/pi/lizard-52.github.io
-git pull
 
 cd /var/www/html
 
