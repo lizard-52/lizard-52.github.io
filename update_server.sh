@@ -5,9 +5,10 @@ service apache2 stop
 
 cd /var/www/html
 
-rm -rf ./*
+#rm -rf ./*
+sudo chmod -R 777 ./*
 
-sudo cp -r /home/pi/lizard-52.github.io .
+sudo cp -ru /home/pi/lizard-52.github.io .
 ln -s ./lizard-52.github.io/* .
 rm -rf ./lizard-52.github.io/.git
 
