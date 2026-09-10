@@ -42,3 +42,7 @@ li { margin: 5px 0px 0px 0px; padding: 0px; }
 a { font-weight: bold; }
 form { padding: 0px; margin: 0px; }
 .footer { font-size: 6px; }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
