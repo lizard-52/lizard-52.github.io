@@ -31,6 +31,9 @@ def update_css():
         lines = f.readlines()
     for i, l in enumerate(lines):
         if "./wobsite_media/wobsite_header" in l:
+            new_l = update_line(l, get_correct_image(today))
+            if new_l != l:
+                print("Update to %s" % new_l)
             lines[i] = update_line(l, get_correct_image(today))
     with open("main.css", 'w') as f:
         for l in lines:
