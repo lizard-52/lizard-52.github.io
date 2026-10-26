@@ -1,4 +1,5 @@
 import os
+import sys
 
 def gen_image_tags(folder, strings):
     for e in os.scandir(folder):
@@ -8,6 +9,7 @@ def gen_image_tags(folder, strings):
             strings += gen_image_tags(e, [])
     return strings
 if __name__ == "__main__":
-    s = gen_image_tags("./images/hcrr", [])
+    path = sys.argv[1]
+    s = gen_image_tags(path, [])
     for tag in sorted(s):
         print(tag)
