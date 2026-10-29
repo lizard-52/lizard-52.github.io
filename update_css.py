@@ -3,9 +3,11 @@ import os
 import pdb
 from time import sleep
 from datetime import datetime
+import shutil
 
 header_images = [
-    [[10,1], [10,31],"./wobsite_media/wobsite_header_fall.jpg"], \
+    [[10,24], [10,31],"./wobsite_media/wobsite_header_halloween.jpg"], \
+    [[9,14], [10,23],"./wobsite_media/wobsite_header_fall.jpg"], \
     [[12,1], [12,25],"./wobsite_media/wobsite_header_christmas.jpg"], \
     [[11,1], [12,31],"./wobsite_media/wobsite_header_winter.jpg"],\
     [[1,1], [2,28],"./wobsite_media/wobsite_header_winter.jpg"],\
@@ -38,9 +40,20 @@ def update_css():
     with open("main.css", 'w') as f:
         for l in lines:
             f.write(l)
+
+def update_link():
+    today = datetime.today()
+    image = get_correct_image(today)
+
+    if os.path.isfile('./wobsite_header_active.jpg'):
+        os.remove('./wobsite_header_active.jpg')
+    
+    shutil.copyfile(image, './wobsite_header_active.jpg')
+
 def main():
     while True:
-        update_css()
+        #update_css()
+        update_link()
         sleep(60*60*1)
 
 if __name__ == "__main__":

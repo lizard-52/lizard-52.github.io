@@ -8,7 +8,7 @@ body { background: #D5D5D5 url(./wobsite_media/bg.jpg); background-size:70px; fo
     .right { float: left; }
     .column_thick { width: device-width; }
     .column_thin { width: device-width; }
-    .header { background: url(./wobsite_media/wobsite_header.jpg); background-size:cover; height: 149px; width: device-width;}
+    .header { background: url(./wobsite_header_active.jpg); background-size:cover; height: 149px; width: device-width;}
 }
 @media screen and (min-width: 760px) {
     #container { width: 720px; margin: auto; }
@@ -17,7 +17,7 @@ body { background: #D5D5D5 url(./wobsite_media/bg.jpg); background-size:70px; fo
     .right { float: right; }
     .column_thick { width: 455px; }
     .column_thin { width: 255px; }
-    .header { margin: 0px 0px 10px 0px; padding: 0px; height: 169px; width: 720px; background: url(./wobsite_media/wobsite_header.jpg); }
+    .header { margin: 0px 0px 10px 0px; padding: 0px; height: 169px; width: 720px; background: url(./wobsite_header_active.jpg); }
 }
 h1 { margin: 0px; padding: 0px;  }
 h2 { margin: 0px; padding: 0px; font-size: 20px; }
